@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Global Travel Agency — Create account</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to Home</a>
+
+  <header class="header">
+    <a class="logo" href="index.html">Global Travel Agency</a>
+  </header>
+
+  <main id="main" class="auth-page" role="main" aria-labelledby="signup-title">
+    <section class="card" aria-labelledby="signup-title">
+      <h1 id="signup-title">Create your account</h1>
+      <p class="lede">Join Global Travel Agency — manage bookings, save favourites and receive tailored offers.</p>
+
+      <form action="#" method="post" novalidate>
+        <label for="fullname">Full name</label>
+        <input id="fullname" name="fullname" type="text" autocomplete="name" required placeholder="name" />
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+
+        <label for="phone">Phone (optional)</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+44 0000000000" />
+
+        <label for="password">Create password</label>
+        <input id="password" name="password" type="password" autocomplete="new-password" required
+               pattern="(?=.{8,})(?=.*[A-Za-z])(?=.*\d).{8,}"
+               aria-describedby="pwd-requirements"/>
+<p id="pwd-requirements" class="help">Minimum 8 characters and at least one number.</p>
+
+        <!-- GDPR opt-in (required: positive consent) -->
+        <div class="form-row">
+          <label class="checkbox">
+            <input id="consent" name="consent" type="checkbox" required />
+            <span>I agree to the <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a> and consent to receive account-related emails.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn">Create account</button>
+
+<p class="muted">Already have an account? <a href="login.html">Sign in</a></p>
+
+<p class="small muted">We only collect the details necessary to provide booking and account services — consent is required under GDPR.</p>
+</form>
+</section>
+</main>
+
+<footer class="footer">
+<p>&copy; 2025 Global Travel Agency</p>
+  </footer>
+
+  <h1><span class="smartphone">Smartphone</span><span class="tablet">Tablet</span><span class="desktop">Desktop</span></h1>
+</body>
+</html>
+
+

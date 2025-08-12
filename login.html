@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Global Travel Agency — Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to Home</a>
+
+  <header class="header">
+    <a class="logo" href="index.html">Global Travel Agency</a>
+  </header>
+
+  <main id="main" class="auth-page" role="main" aria-labelledby="login-title">
+    <section class="card" aria-labelledby="login-title">
+      <h1 id="login-title">Sign in to Global Horizons</h1>
+      <p class="lede">Welcome back — sign in to manage bookings and view exclusive offers.</p>
+
+      <form action="#" method="post" novalidate>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required
+               aria-describedby="email-help" placeholder="you@example.com" />
+
+        <div class="password-row">
+          <label for="password">Password</label>
+          <a class="small-link" href="reset-password.html">Forgot?</a>
+        </div>
+        <input id="password" name="password" type="password" autocomplete="current-password" required
+               pattern=".{8,}" aria-describedby="password-help" placeholder="••••••••" />
+        <p id="password-help" class="help">Minimum 8 characters.</p>
+
+        <div class="form-row">
+          <label class="checkbox">
+            <input type="checkbox" name="remember" />
+            <span>Remember me</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn">Sign in</button>
+
+        <p class="muted">Don't have an account? <a href="signup.html">Create one</a></p>
+
+        <p class="small muted">By signing in you agree to our <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Global Travel Agency</p>
+  </footer>
+
+  
+</body>
+</html>
